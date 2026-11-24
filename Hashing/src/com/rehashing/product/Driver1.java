@@ -7,7 +7,7 @@ public class Driver1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Set<String> products = new HashSet<String>();
+		Set<String> products = new HashSet<String>(32, 0.75f, true);
 		products.add("1");
 		products.add("2");
 		products.add("3");

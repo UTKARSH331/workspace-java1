@@ -65,12 +65,12 @@ class NotNormalFlyable implements Flyable{
 
 
 
-abstract class Robot {
+abstract class Robot1 {
 	protected Walkable walkable;
 	protected Talkable talkable;
 	protected Flyable flyable;
 	
-	public Robot(Walkable w, Talkable t, Flyable f) {
+	public Robot1(Walkable w, Talkable t, Flyable f) {
 		this.walkable = w;
 		this.talkable = t;
 		this.flyable = f;
@@ -87,7 +87,7 @@ abstract class Robot {
 	public abstract void projection();
 }
 
-	class CompanionRobot extends Robot{
+	class CompanionRobot extends Robot1{
 
 		public CompanionRobot(Walkable w, Talkable t, Flyable f) {
 			super(w, t, f);
@@ -100,7 +100,7 @@ abstract class Robot {
 			System.out.println("Displaying in projection of CompanionRobot");	
 		}
 	}
-	class WorkerRobot extends Robot{
+	class WorkerRobot extends Robot1{
 
 		public WorkerRobot(Walkable w, Talkable t, Flyable f) {
 			super(w, t, f);
@@ -115,9 +115,9 @@ abstract class Robot {
 		}
 		
 	}
-	public class StartegyDesignPattern11{
+	public class Robot{
 		public static void main(String args[]) {
-			Robot r1 = new CompanionRobot(new  NormalWalk(), new NormalTalkable(), new NormalFlyable());
+			Robot1 r1 = new CompanionRobot(new  NormalWalk(), new NormalTalkable(), new NormalFlyable());
 			r1.Talk();
 			r1.walk();
 			r1.Fly();

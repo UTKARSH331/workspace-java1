@@ -1,0 +1,9 @@
+exception are always raised at the runtime  only (while exception)
+
+1. checked exception(your compiler knows about the exception) if compiler knows your particular code give  that exception then it says check once your code
+eg : - filenotfoundexception, classnotfoundexception, IOException. sqlexception
+compiler will force you to handle
+checked by compiler
+2. unchecked exception()
+compiler will not force you to handle
+unchecked by compiler

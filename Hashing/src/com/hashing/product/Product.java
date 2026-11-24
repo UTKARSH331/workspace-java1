@@ -1,4 +1,4 @@
-package com.hashing.product;
+ package com.hashing.product;
 
 import java.util.HashSet;
 
@@ -11,7 +11,9 @@ public class Product {
 		product.add("lg23");
 		product.add("mac-pro324");
 		int hash = "mac-pro324".hashCode();
+		System.out.println("hash is...." + hash);
 		int spreadHash = hash ^ (hash >>> 16);
+		System.out.println("spreadHash is......" + spreadHash);
 		int bucketNumber = spreadHash & 15;
 		System.out.println("bucket number is " + bucketNumber);
 	}
